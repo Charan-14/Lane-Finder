@@ -195,9 +195,9 @@ while (vid.isOpened()):
         gaussBlur = cv.GaussianBlur(grey, (kernel,kernel), 0)
         
         #Best threshold values found after tuning on multiple test images.
-        if gaussBlur.shape[0] ==720:
-            lowerThreshold = 400 # below which..
-            upperThreshold = 500 # above which..
+        if gaussBlur.shape[0]==720:
+            lowerThreshold = 200 # below which.. #200
+            upperThreshold = 600 # above which.. #600
         else:
             lowerThreshold = 100 # below which..
             upperThreshold = 300 # above which..
