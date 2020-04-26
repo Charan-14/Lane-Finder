@@ -13,7 +13,7 @@ First Things first converting the input video/image to grayscale for it be used 
 
 ![grayscale](https://user-images.githubusercontent.com/58968984/80318554-9a7a5800-8828-11ea-924c-6025d28004ca.png)
 
-Then using gaussian blur which reduces noise depending on the kernel size. After which canny edge detector filter is applied which finds edges based on gradients. I have used a GUI tool called trackbars in openCV for easier tuning and visualization of threshold values of the Canny filter.
+Then using gaussian blur which reduces noise depending on the kernel size. After which Canny edge detector filter is applied which finds edges based on gradients. I have used a GUI tool called trackbars in openCV for easier tuning and visualization of threshold values of the Canny filter.
 
 ![canny](https://user-images.githubusercontent.com/58968984/80318647-33a96e80-8829-11ea-8393-d17efe118518.png)
 
