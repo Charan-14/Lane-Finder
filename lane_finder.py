@@ -196,11 +196,11 @@ while (vid.isOpened()):
         
         #Best threshold values found after tuning on multiple test images.
         if gaussBlur.shape[0]==720:
-            lowerThreshold = 200 # below which.. #200
-            upperThreshold = 600 # above which.. #600
+            lowerThreshold = 200 # below which edges do not exist
+            upperThreshold = 600 # above which edges are sure to exist
         else:
-            lowerThreshold = 100 # below which..
-            upperThreshold = 300 # above which..
+            lowerThreshold = 100 # below which edges do not exist
+            upperThreshold = 300 # above which edges are sure to exist
         
         edges = cv.Canny(gaussBlur, lowerThreshold, upperThreshold)
 
